@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08834C7E-01BF-45ED-A526-B051E7A02C04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xamarin.Forms.Platform.WPF</RootNamespace>
+    <AssemblyName>Xamarin.Forms.Platform.Android</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Expression\Blend\.NETFramework\v4.5\Libraries\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=2.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.8\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=2.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.8\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=2.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.8\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=2.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.8\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=2.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.8\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.8\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\TimePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Forms\TableView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Forms\WPResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ApplicationBar.cs" />
+    <Compile Include="Controls\ApplicationBarIconButton.cs" />
+    <Compile Include="Controls\ApplicationBarMenuItem.cs" />
+    <Compile Include="Controls\CanvasEx.cs" />
+    <Compile Include="Controls\CustomMessageBox.cs" />
+    <Compile Include="Controls\CustomMessageBoxResult.cs" />
+    <Compile Include="Controls\DatePicker.cs" />
+    <Compile Include="Controls\DismissedEventArgs.cs" />
+    <Compile Include="Controls\GestureEventArgs.cs" />
+    <Compile Include="Controls\HubTile.cs" />
+    <Compile Include="Controls\ItemRealizationEventArgs.cs" />
+    <Compile Include="Controls\ITransition.cs" />
+    <Compile Include="Controls\ListPicker.cs" />
+    <Compile Include="Controls\LongListSelector.cs" />
+    <Compile Include="Controls\LongListSelectorLayoutMode.cs" />
+    <Compile Include="Controls\Panorama.cs" />
+    <Compile Include="Controls\PanoramaItem.cs" />
+    <Compile Include="Controls\PhoneTextBox.cs" />
+    <Compile Include="Controls\PivotItem.cs" />
+    <Compile Include="Controls\ProgressIndicator.cs" />
+    <Compile Include="Controls\SlideTransition.cs" />
+    <Compile Include="Controls\SystemTray.cs" />
+    <Compile Include="Controls\TileSize.cs" />
+    <Compile Include="Controls\TiltEffect.cs" />
+    <Compile Include="Controls\TimePicker.xaml.cs">
+      <DependentUpon>TimePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToggleSwitch.cs" />
+    <Compile Include="Controls\ToggleSwitchButton.cs" />
+    <Compile Include="Controls\TurnstileTransition.cs" />
+    <Compile Include="Controls\TurnstileTransitionMode.cs" />
+    <Compile Include="Controls\VisualTreeHelperEx.cs" />
+    <Compile Include="Controls\WpfApplicationPage.cs" />
+    <Compile Include="Converters\CaseConverter.cs" />
+    <Compile Include="Converters\ColorConverter.cs" />
+    <Compile Include="Converters\HorizontalTextAlignmentConverter.cs" />
+    <Compile Include="Converters\ImageConverter.cs" />
+    <Compile Include="Converters\KeyboardConverter.cs" />
+    <Compile Include="Forms\ActivityIndicatorRenderer.cs" />
+    <Compile Include="Forms\AlignmentExtensions.cs" />
+    <Compile Include="Forms\Animatable.cs" />
+    <Compile Include="Forms\AsyncValue.cs" />
+    <Compile Include="Forms\BoxViewRenderer.cs" />
+    <Compile Include="Forms\ButtonRenderer.cs" />
+    <Compile Include="Forms\CarouselPageRenderer.cs" />
+    <Compile Include="Forms\CellControl.cs" />
+    <Compile Include="Forms\CellTemplateSelector.cs" />
+    <Compile Include="Forms\CollapseWhenEmptyConverter.cs" />
+    <Compile Include="Forms\ConvertExtensions.cs" />
+    <Compile Include="Forms\CustomContextMenu.cs" />
+    <Compile Include="Forms\DataTemplateSelector.cs" />
+    <Compile Include="Forms\DatePickerRenderer.cs" />
+    <Compile Include="Forms\Deserializer.cs" />
+    <Compile Include="Forms\EditorRenderer.cs" />
+    <Compile Include="Forms\ElementChangedEventArgs.cs" />
+    <Compile Include="Forms\EntryRenderer.cs" />
+    <Compile Include="Forms\ExportCellAttribute.cs" />
+    <Compile Include="Forms\ExportImageSourceHandlerAttribute.cs" />
+    <Compile Include="Forms\ExportRendererAttribute.cs" />
+    <Compile Include="Forms\Extensions.cs" />
+    <Compile Include="Forms\FontExtensions.cs" />
+    <Compile Include="Forms\Forms.cs" />
+    <Compile Include="Forms\FormsApplicationPage.cs" />
+    <Compile Include="Forms\FormsListPicker.cs" />
+    <Compile Include="Forms\FormsPhoneTextBox.cs" />
+    <Compile Include="Forms\FrameRenderer.cs" />
+    <Compile Include="Forms\FrameworkElementExtensions.cs" />
+    <Compile Include="Forms\ICellRenderer.cs" />
+    <Compile Include="Forms\ImageRenderer.cs" />
+    <Compile Include="Forms\IVisualElementRenderer.cs" />
+    <Compile Include="Forms\LabelRenderer.cs" />
+    <Compile Include="Forms\LayoutExtensions.cs" />
+    <Compile Include="Forms\ListViewRenderer.cs" />
+    <Compile Include="Forms\MasterDetailRenderer.cs" />
+    <Compile Include="Forms\MD5.cs" />
+    <Compile Include="Forms\MD5CryptoServiceProvider.cs" />
+    <Compile Include="Forms\NativeViewWrapper.cs" />
+    <Compile Include="Forms\NativeViewWrapperRenderer.cs" />
+    <Compile Include="Forms\NavigationMenuRenderer.cs" />
+    <Compile Include="Forms\NavigationPageRenderer.cs" />
+    <Compile Include="Forms\PageRenderer.cs" />
+    <Compile Include="Forms\PageToRendererConverter.cs" />
+    <Compile Include="Forms\PickerRenderer.cs" />
+    <Compile Include="Forms\Platform.cs" />
+    <Compile Include="Forms\PlatformEffect.cs" />
+    <Compile Include="Forms\ProgressBarRenderer.cs" />
+    <Compile Include="Forms\RendererFactory.cs" />
+    <Compile Include="Forms\ResourcesProvider.cs" />
+    <Compile Include="Forms\ScrollViewRenderer.cs" />
+    <Compile Include="Forms\SearchBarRenderer.cs" />
+    <Compile Include="Forms\SliderRenderer.cs" />
+    <Compile Include="Forms\StepperRenderer.cs" />
+    <Compile Include="Forms\SwitchRenderer.cs" />
+    <Compile Include="Forms\TabbedPageRenderer.cs" />
+    <Compile Include="Forms\TableView.xaml.cs">
+      <DependentUpon>TableView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TableViewRenderer.cs" />
+    <Compile Include="Forms\TaskExtensions.cs" />
+    <Compile Include="Forms\TextAlignmentToHorizontalAlignmentConverter.cs" />
+    <Compile Include="Forms\TextCellRenderer.cs" />
+    <Compile Include="Forms\TimePickerRenderer.cs" />
+    <Compile Include="Forms\ViewExtensions.cs" />
+    <Compile Include="Forms\ViewRenderer.cs" />
+    <Compile Include="Forms\ViewToRendererConverter.cs" />
+    <Compile Include="Forms\VisualElementPackager.cs" />
+    <Compile Include="Forms\VisualElementRenderer.cs" />
+    <Compile Include="Forms\VisualElementTracker.cs" />
+    <Compile Include="Forms\WebViewRenderer.cs" />
+    <Compile Include="Forms\WinPhoneTicker.cs" />
+    <Compile Include="Forms\WP8PlatformServices.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Forms\packages.config" />
+    <Content Include="Forms\ServiceReferences.ClientConfig" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+      <Project>{57B8B73D-C3B5-4C42-869E-7B2F17D354AC}</Project>
+      <Name>Xamarin.Forms.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
